@@ -1,3 +1,9 @@
+:root{
+  --primary: #EA625C;
+  --text-color: #333;
+}
+
+
 /* GLOBAL */
 
 html {
@@ -17,13 +23,12 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
@@ -33,10 +38,73 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.logo-img{
+  display: block;
+  object-fit: contain;
+  width: 35px;
+  height: 42px;
+}
+.logo-img:hover{
+  opacity: 0.8;
+}
+.logo-img:active{
+  opacity: 0.6;
+}
+
+.sitenav{
+  display: flex;
+  margin-left: 500px;
+}
+
+.container-header{
+  display: flex;
+  align-items: center;
+}
+.sitenav-list{
+  list-style: none;
+  display: flex;
+}
+.sitenav-list-link{
+  text-decoration: none;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  font-size: 15px;
+  color: var(--text-color);
+  transition: border-bottom 0.3s ease;
+}
+.sitenav-list-link:hover{
+  border-bottom: 3px solid #333;
+}
+.sitenav-list-item:not(:last-child){
+  margin-right: 30px;
+}
+.sitenav-divider{
+  width: 153px;
+}
+.sitenav-help{
+  margin-left: 40px;
+  margin-top: 16px;
+}
+.sitenav-help-link{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.sitenav-divider{
+  margin-right: 0;
+  margin-top: 6px;
+}
+.search-form-input{
+  border: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333;
 }
