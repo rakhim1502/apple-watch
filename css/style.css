@@ -137,17 +137,28 @@ img {
   margin-bottom: 30px;
   padding-left: 37px;
 }
+.lead-cta-white .lead-cta-heading{
+  color: #fff;
+}
+
+.lead-cta-white .lead-cta-text{
+  color: #fff;
+  border-color: #fff;
+}
+
 .button {
   border: 0;
   display: inline-block;
   background-color: var(--primary);
   padding: 12px 38px;
   text-decoration: none;
+  min-width: 260px;
   color: #fff;
   font-size: 18px;
   line-height: 150%;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
   transition: 0.3s ease;
 }
 .button:hover{
@@ -225,6 +236,35 @@ img {
   width: 60px;
 }
 
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+}
+.promo-lead-cta {
+  margin-right: 110px;
+}
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.runners-lead-cta {
+  margin-left: auto;
+}
 
 
 
